@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>プラント足場工事｜安全・迅速・確実な足場施工｜株式会社西宮工業</title>
+  <meta name="description" content="プラント特化の足場施工会社。定修・保全・緊急対応まで一式対応。安全性と作業効率を両立した足場工事で、プラント現場の稼働を支えます。即日対応・24時間緊急対応可能。" />
+  <meta name="keywords" content="プラント足場,足場工事,定修工事,緊急対応,保全足場" />
+  <meta property="og:title" content="プラント足場工事｜安全・迅速・確実な足場施工｜株式会社西宮工業" />
+  <meta property="og:description" content="プラント特化の足場施工。定修・保全・緊急対応まで一式対応。" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="https://public.readdy.ai/ai/img_res/6bd1be4e-af51-44c8-9037-3bde25705eff.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#00BFFF',
+            dark: '#1a2332',
+            card: '#263447',
+          },
+          fontFamily: {
+            sans: ['"Noto Sans JP"', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Noto Sans JP', sans-serif; }
+    .nav-scrolled { background-color: rgba(26,35,50,0.95); box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
+    .tab-active { background: rgba(0,191,255,0.2); color: #00BFFF; border-bottom: 2px solid #00BFFF; }
+    .tab-inactive { color: rgba(255,255,255,0.5); }
+    .tab-inactive:hover { color: rgba(255,255,255,0.8); }
+    @keyframes bounce { 0%,100% { transform: translateY(0) translateX(-50%); } 50% { transform: translateY(-8px) translateX(-50%); } }
+    .scroll-bounce { animation: bounce 1.5s infinite; }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent">
+  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <button onclick="scrollTo('hero')" class="flex items-center gap-3 cursor-pointer bg-transparent border-none">
+      <img src="https://public.readdy.ai/ai/img_res/6bd1be4e-af51-44c8-9037-3bde25705eff.png" alt="会社ロゴ" class="h-10 w-auto object-contain" />
+      <span class="text-white font-bold text-base whitespace-nowrap hidden sm:block">株式会社西宮工業</span>
+    </button>
+    <div class="hidden md:flex items-center gap-8">
+      <button onclick="scrollTo('service')" class="text-white/90 hover:text-[#00BFFF] text-sm font-medium transition-colors duration-200 cursor-pointer whitespace-nowrap bg-transparent border-none">サービス</button>
+      <button onclick="scrollTo('works')" class="text-white/90 hover:text-[#00BFFF] text-sm font-medium transition-colors duration-200 cursor-pointer whitespace-nowrap bg-transparent border-none">施工実績</button>
+      <button onclick="scrollTo('about')" class="text-white/90 hover:text-[#00BFFF] text-sm font-medium transition-colors duration-200 cursor-pointer whitespace-nowrap bg-transparent border-none">会社情報</button>
+      <button onclick="scrollTo('recruit')" class="text-white/90 hover:text-[#00BFFF] text-sm font-medium transition-colors duration-200 cursor-pointer whitespace-nowrap bg-transparent border-none">採用情報</button>
+      <button onclick="scrollTo('contact')" class="text-white/90 hover:text-[#00BFFF] text-sm font-medium transition-colors duration-200 cursor-pointer whitespace-nowrap bg-transparent border-none">お問い合わせ</button>
+      <a href="tel:0438-42-1710" class="flex items-center gap-2 bg-[#00BFFF] hover:bg-[#00a8e0] text-white text-sm font-bold px-4 py-2 rounded-md transition-colors duration-200 whitespace-nowrap">
+        <i class="ri-phone-fill text-base"></i>今すぐ電話する
+      </a>
+    </div>
+    <button id="menu-btn" onclick="toggleMenu()" class="md:hidden text-white cursor-pointer bg-transparent border-none">
+      <i id="menu-icon" class="ri-menu-line text-2xl"></i>
+    </button>
+  </div>
+  <div id="mobile-menu" class="md:hidden hidden bg-[#1a2332] border-t border-white/10">
+    <div class="flex flex-col px-6 py-4 gap-4">
+      <button onclick="scrollTo('service')" class="text-white/90 hover:text-[#00BFFF] text-sm font-medium text-left bg-transparent border-none cursor-pointer">サービス</button>
+      <button onclick="scrollTo('works')" class="text-white/90 hover:text-[#00BFFF] text-sm font-medium text-left bg-transparent border-none cursor-pointer">施工実績</button>
+      <button onclick="scrollTo('about')" class="text-white/90 hover:text-[#00BFFF] text-sm font-medium text-left bg-transparent border-none cursor-pointer">会社情報</button>
+      <button onclick="scrollTo('recruit')" class="text-white/90 hover:text-[#00BFFF] text-sm font-medium text-left bg-transparent border-none cursor-pointer">採用情報</button>
+      <button onclick="scrollTo('contact')" class="text-white/90 hover:text-[#00BFFF] text-sm font-medium text-left bg-transparent border-none cursor-pointer">お問い合わせ</button>
+      <a href="tel:0438-42-1710" class="flex items-center gap-2 bg-[#00BFFF] text-white text-sm font-bold px-4 py-3 rounded-md justify-center whitespace-nowrap">
+        <i class="ri-phone-fill"></i>今すぐ電話する
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="hero" class="relative w-full h-screen min-h-[700px] flex items-center overflow-hidden">
+  <div class="absolute inset-0">
+    <img
+      src="https://readdy.ai/api/search-image?query=industrial%20plant%20scaffolding%20construction%20site%20at%20dusk%2C%20large%20steel%20pipes%20and%20towers%2C%20workers%20on%20scaffolding%2C%20dramatic%20industrial%20atmosphere%2C%20orange%20and%20dark%20blue%20tones%2C%20wide%20angle%20panoramic%20view%2C%20professional%20photography%2C%20high%20contrast%20lighting%2C%20dark%20moody%20background%20with%20industrial%20structures&width=1920&height=1080&seq=hero001&orientation=landscape"
+      alt="プラント足場施工現場"
+      class="w-full h-full object-cover object-top"
+    />
+    <div class="absolute inset-0 bg-gradient-to-r from-[#1a2332]/85 via-[#1a2332]/60 to-[#1a2332]/30"></div>
+  </div>
+  <div class="absolute bottom-8 right-8 hidden lg:block pointer-events-none select-none">
+    <span class="text-[120px] font-black text-white/5 tracking-widest leading-none" style="font-family:'Oswald',sans-serif;">PLANT</span>
+  </div>
+  <div class="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-16">
+    <div class="max-w-2xl">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-[2px] bg-[#00BFFF]"></div>
+        <span class="text-[#00BFFF] text-sm font-bold tracking-widest uppercase">Plant Scaffolding</span>
+      </div>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
+        止められない現場に、<br />
+        <span class="text-[#00BFFF]">止めない足場</span>を。
+      </h1>
+      <p class="text-lg md:text-xl text-white/80 leading-relaxed mb-10">
+        プラント特化の足場施工。<br />
+        安全・迅速・確実に、現場の稼働を支えます。
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="tel:0438-42-1710" class="flex items-center justify-center gap-3 bg-[#00BFFF] hover:bg-[#00a8e0] text-white font-bold px-8 py-4 rounded-md transition-all duration-200 hover:scale-105 whitespace-nowrap">
+          <i class="ri-phone-fill text-lg"></i>今すぐ電話する
+        </a>
+        <button onclick="scrollTo('contact')" class="flex items-center justify-center gap-3 border-2 border-white text-white hover:bg-white hover:text-[#1a2332] font-bold px-8 py-4 rounded-md transition-all duration-200 hover:scale-105 whitespace-nowrap cursor-pointer">
+          <i class="ri-file-list-3-line text-lg"></i>無料見積もりはこちら
+        </button>
+      </div>
+      <div class="flex items-center gap-8 mt-12 pt-8 border-t border-white/20">
+        <div class="text-center">
+          <div class="text-3xl font-black text-[#00BFFF]">24h</div>
+          <div class="text-white/60 text-xs mt-1">緊急対応</div>
+        </div>
+        <div class="w-px h-10 bg-white/20"></div>
+        <div class="text-center">
+          <div class="text-3xl font-black text-[#00BFFF]">即日</div>
+          <div class="text-white/60 text-xs mt-1">対応可能</div>
+        </div>
+        <div class="w-px h-10 bg-white/20"></div>
+        <div class="text-center">
+          <div class="text-3xl font-black text-[#00BFFF]">全国</div>
+          <div class="text-white/60 text-xs mt-1">対応エリア</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button onclick="scrollTo('service')" class="scroll-bounce absolute bottom-8 left-1/2 flex flex-col items-center justify-center gap-2 cursor-pointer bg-transparent border-none" style="transform:translateX(-50%)">
+    <span class="text-white/50 text-xs tracking-widest">SCROLL</span>
+    <i class="ri-arrow-down-line text-white/50"></i>
+  </button>
+</section>
+
+<!-- ===== SERVICE ===== -->
+<section id="service" class="bg-[#1a2332] py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <span class="text-[#00BFFF] text-xs font-bold tracking-[4px] uppercase">Service</span>
+      <h2 class="text-3xl md:text-4xl font-black text-white mt-3 mb-5">プラント足場工事一式対応</h2>
+      <p class="text-white/60 text-base leading-relaxed max-w-2xl mx-auto">
+        プラント現場における足場工事を一式で対応。<br />
+        定修・保全・緊急対応まで、状況に応じて柔軟に施工いたします。
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div class="bg-[#263447] rounded-xl overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
+        <div class="w-full h-48 overflow-hidden">
+          <img src="https://readdy.ai/api/search-image?query=industrial%20plant%20scaffolding%20construction%20complex%20steel%20structure%20pipes%20towers%20professional%20workers%20safety%20equipment%20dark%20industrial%20background%20orange%20accent%20lighting%20wide%20angle%20shot%20high%20quality%20photography&width=600&height=400&seq=svc001&orientation=landscape" alt="プラント足場工事一式" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-9 h-9 flex items-center justify-center bg-[#00BFFF]/15 rounded-lg">
+              <i class="ri-building-2-line text-[#00BFFF] text-lg"></i>
+            </div>
+            <h3 class="text-white font-bold text-lg">プラント足場工事一式</h3>
+          </div>
+          <p class="text-white/60 text-sm leading-relaxed">複雑な設備環境にも対応した足場を設計・施工。安全性と作業効率を両立します。</p>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-[#263447] rounded-xl overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
+        <div class="w-full h-48 overflow-hidden">
+          <img src="https://readdy.ai/api/search-image?query=large%20scale%20plant%20maintenance%20scaffolding%20refinery%20industrial%20facility%20workers%20in%20hard%20hats%20systematic%20construction%20dark%20moody%20atmosphere%20professional%20industrial%20photography%20wide%20shot&width=600&height=400&seq=svc002&orientation=landscape" alt="定修工事対応" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-9 h-9 flex items-center justify-center bg-[#00BFFF]/15 rounded-lg">
+              <i class="ri-tools-line text-[#00BFFF] text-lg"></i>
+            </div>
+            <h3 class="text-white font-bold text-lg">定修工事対応</h3>
+          </div>
+          <p class="text-white/60 text-sm leading-relaxed">大規模な定期修繕工事にも対応。工程に合わせた施工で、スムーズな現場運営を支えます。</p>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-[#263447] rounded-xl overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
+        <div class="w-full h-48 overflow-hidden">
+          <img src="https://readdy.ai/api/search-image?query=maintenance%20scaffolding%20industrial%20plant%20inspection%20workers%20safety%20harness%20steel%20pipes%20equipment%20professional%20industrial%20site%20dark%20background%20orange%20safety%20colors&width=600&height=400&seq=svc003&orientation=landscape" alt="保全・メンテナンス足場" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-9 h-9 flex items-center justify-center bg-[#00BFFF]/15 rounded-lg">
+              <i class="ri-shield-check-line text-[#00BFFF] text-lg"></i>
+            </div>
+            <h3 class="text-white font-bold text-lg">保全・メンテナンス足場</h3>
+          </div>
+          <p class="text-white/60 text-sm leading-relaxed">日常点検や保全作業に最適な足場を構築。作業効率を意識した設計を行います。</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+      <!-- Card 4 -->
+      <div class="bg-[#263447] rounded-xl overflow-hidden flex flex-col sm:flex-row group hover:-translate-y-1 transition-transform duration-300">
+        <div class="w-full sm:w-56 h-48 sm:h-auto flex-shrink-0 overflow-hidden">
+          <img src="https://readdy.ai/api/search-image?query=emergency%20scaffolding%20rapid%20deployment%20industrial%20plant%20urgent%20construction%20workers%20night%20shift%20dramatic%20lighting%20industrial%20atmosphere%20professional%20photography&width=600&height=400&seq=svc004&orientation=landscape" alt="緊急対応" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+        </div>
+        <div class="p-6 flex flex-col justify-center border-l-4 border-[#00BFFF]">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-9 h-9 flex items-center justify-center bg-[#00BFFF]/15 rounded-lg">
+              <i class="ri-flashlight-line text-[#00BFFF] text-lg"></i>
+            </div>
+            <h3 class="text-white font-bold text-lg">緊急対応（突発案件）</h3>
+          </div>
+          <p class="text-white/60 text-sm leading-relaxed">トラブル時にも迅速対応。即日対応・短時間施工にも柔軟に対応可能です。</p>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="bg-[#263447] rounded-xl overflow-hidden flex flex-col sm:flex-row group hover:-translate-y-1 transition-transform duration-300">
+        <div class="w-full sm:w-56 h-48 sm:h-auto flex-shrink-0 overflow-hidden">
+          <img src="https://readdy.ai/api/search-image?query=scaffolding%20dismantling%20removal%20industrial%20plant%20workers%20systematic%20deconstruction%20safety%20equipment%20professional%20industrial%20site%20dark%20moody%20background&width=600&height=400&seq=svc005&orientation=landscape" alt="解体・撤去" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+        </div>
+        <div class="p-6 flex flex-col justify-center border-l-4 border-[#00BFFF]">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-9 h-9 flex items-center justify-center bg-[#00BFFF]/15 rounded-lg">
+              <i class="ri-delete-bin-line text-[#00BFFF] text-lg"></i>
+            </div>
+            <h3 class="text-white font-bold text-lg">解体・撤去</h3>
+          </div>
+          <p class="text-white/60 text-sm leading-relaxed">設置から撤去まで一貫対応。最後まで安全かつ確実に施工します。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WORKS ===== -->
+<section id="works" class="bg-[#f5f7fa] py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="mb-14">
+      <span class="text-[#00BFFF] text-xs font-bold tracking-[4px] uppercase">Works</span>
+      <h2 class="text-3xl md:text-4xl font-black text-[#1a2332] mt-3">施工実績</h2>
+      <p class="text-[#1a2332]/50 text-sm mt-3">これまでに手がけた主な施工事例をご紹介します。</p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <!-- Large card -->
+      <div class="lg:row-span-2 relative rounded-2xl overflow-hidden group cursor-pointer h-[500px] lg:h-auto">
+        <img src="https://readdy.ai/api/search-image?query=oil%20refinery%20plant%20scaffolding%20construction%20petroleum%20facility%20large%20scale%20maintenance%20workers%20safety%20equipment%20dramatic%20industrial%20sunset%20orange%20sky%20professional%20photography%20wide%20angle&width=800&height=600&seq=work001&orientation=portrait" alt="製鉄所｜定修工事" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#1a2332]/90 via-[#1a2332]/30 to-transparent"></div>
+        <div class="absolute top-4 left-4">
+          <span class="bg-[#00BFFF] text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">REGULAR MAINTENANCE</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 p-6">
+          <h3 class="text-white font-black text-xl mb-3">製鉄所｜定修工事</h3>
+          <div class="flex flex-wrap gap-3 mb-3">
+            <span class="text-white/70 text-xs flex items-center gap-1"><i class="ri-tools-line text-[#00BFFF]"></i>足場一式</span>
+            <span class="text-white/70 text-xs flex items-center gap-1"><i class="ri-time-line text-[#00BFFF]"></i>約4週間</span>
+            <span class="text-white/70 text-xs flex items-center gap-1"><i class="ri-group-line text-[#00BFFF]"></i>約20名</span>
+          </div>
+          <p class="text-white/70 text-sm leading-relaxed">安全性と作業効率を両立した施工を実施。複雑な配管周りにも対応した足場設計で、定修工事を円滑に進めました。</p>
+        </div>
+      </div>
+      <!-- Small card 1 -->
+      <div class="relative rounded-2xl overflow-hidden group cursor-pointer h-60">
+        <img src="https://readdy.ai/api/search-image?query=power%20plant%20scaffolding%20inspection%20maintenance%20industrial%20facility%20workers%20narrow%20space%20professional%20construction%20dark%20industrial%20atmosphere%20high%20contrast%20lighting&width=600&height=500&seq=work002&orientation=landscape" alt="発電所｜保全足場" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#1a2332]/85 via-[#1a2332]/20 to-transparent"></div>
+        <div class="absolute top-4 right-4">
+          <span class="bg-[#00BFFF] text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">MAINTENANCE</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 p-5">
+          <h3 class="text-white font-black text-base mb-2">発電所｜保全足場</h3>
+          <div class="flex flex-wrap gap-3 mb-2">
+            <span class="text-white/70 text-xs flex items-center gap-1"><i class="ri-tools-line text-[#00BFFF]"></i>点検用足場</span>
+            <span class="text-white/70 text-xs flex items-center gap-1"><i class="ri-time-line text-[#00BFFF]"></i>約10日</span>
+            <span class="text-white/70 text-xs flex items-center gap-1"><i class="ri-group-line text-[#00BFFF]"></i>約8名</span>
+          </div>
+          <p class="text-white/60 text-xs leading-relaxed">狭所環境でも作業しやすい足場を構築。発電設備の定期点検を安全かつ効率的にサポートしました。</p>
+        </div>
+      </div>
+      <!-- Small card 2 -->
+      <div class="relative rounded-2xl overflow-hidden group cursor-pointer h-60">
+        <img src="https://readdy.ai/api/search-image?query=chemical%20plant%20emergency%20scaffolding%20rapid%20deployment%20industrial%20factory%20night%20operation%20dramatic%20lighting%20workers%20urgent%20construction%20professional%20photography&width=600&height=500&seq=work003&orientation=landscape" alt="化学工場｜緊急対応" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#1a2332]/85 via-[#1a2332]/20 to-transparent"></div>
+        <div class="absolute top-4 right-4">
+          <span class="bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">EMERGENCY</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 p-5">
+          <h3 class="text-white font-black text-base mb-2">化学工場｜緊急対応</h3>
+          <div class="flex flex-wrap gap-3 mb-2">
+            <span class="text-white/70 text-xs flex items-center gap-1"><i class="ri-tools-line text-[#00BFFF]"></i>緊急足場設置</span>
+            <span class="text-white/70 text-xs flex items-center gap-1"><i class="ri-time-line text-[#00BFFF]"></i>即日対応</span>
+            <span class="text-white/70 text-xs flex items-center gap-1"><i class="ri-group-line text-[#00BFFF]"></i>約5名</span>
+          </div>
+          <p class="text-white/60 text-xs leading-relaxed">突発的なトラブルにも迅速に対応。短時間での足場設置を実現し、工場の早期復旧に貢献しました。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="bg-white py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <span class="text-[#00BFFF] text-xs font-bold tracking-[4px] uppercase">About</span>
+      <h2 class="text-3xl md:text-4xl font-black text-[#1a2332] mt-3">会社情報</h2>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      <div>
+        <h3 class="text-lg font-bold text-[#1a2332] mb-6 flex items-center gap-2">
+          <div class="w-1 h-5 bg-[#00BFFF] rounded-full"></div>会社概要
+        </h3>
+        <div class="border border-[#e8ecf0] rounded-xl overflow-hidden">
+          <div class="flex items-center px-6 py-4 border-b border-[#e8ecf0]"><span class="text-[#1a2332]/50 text-sm w-28 flex-shrink-0">会社名</span><span class="text-[#1a2332] text-sm font-medium">株式会社西宮工業</span></div>
+          <div class="flex items-center px-6 py-4 border-b border-[#e8ecf0]"><span class="text-[#1a2332]/50 text-sm w-28 flex-shrink-0">代表者</span><span class="text-[#1a2332] text-sm font-medium">西宮 寛治</span></div>
+          <div class="flex items-center px-6 py-4 border-b border-[#e8ecf0]"><span class="text-[#1a2332]/50 text-sm w-28 flex-shrink-0">所在地</span><span class="text-[#1a2332] text-sm font-medium">〒299-0016 千葉県木更津市高砂1-4-40</span></div>
+          <div class="flex items-center px-6 py-4 border-b border-[#e8ecf0]"><span class="text-[#1a2332]/50 text-sm w-28 flex-shrink-0">設立</span><span class="text-[#1a2332] text-sm font-medium">2025年7月7日</span></div>
+          <div class="flex items-center px-6 py-4 border-b border-[#e8ecf0]"><span class="text-[#1a2332]/50 text-sm w-28 flex-shrink-0">事業内容</span><span class="text-[#1a2332] text-sm font-medium">プラント足場工事一式</span></div>
+          <div class="flex items-center px-6 py-4"><span class="text-[#1a2332]/50 text-sm w-28 flex-shrink-0">対応エリア</span><span class="text-[#1a2332] text-sm font-medium">千葉県/首都圏近郊</span></div>
+        </div>
+        <h3 class="text-lg font-bold text-[#1a2332] mt-10 mb-6 flex items-center gap-2">
+          <div class="w-1 h-5 bg-[#00BFFF] rounded-full"></div>許可・資格
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div class="bg-[#f5f7fa] rounded-xl p-5 text-center">
+            <div class="w-10 h-10 flex items-center justify-center bg-[#00BFFF]/10 rounded-full mx-auto mb-3"><i class="ri-award-line text-[#00BFFF] text-xl"></i></div>
+            <div class="text-[#1a2332]/50 text-xs mb-1">建設業許可</div>
+            <div class="text-[#1a2332] font-bold text-sm">千葉県知事許可</div>
+          </div>
+          <div class="bg-[#f5f7fa] rounded-xl p-5 text-center">
+            <div class="w-10 h-10 flex items-center justify-center bg-[#00BFFF]/10 rounded-full mx-auto mb-3"><i class="ri-user-star-line text-[#00BFFF] text-xl"></i></div>
+            <div class="text-[#1a2332]/50 text-xs mb-1">足場作業主任者</div>
+            <div class="text-[#1a2332] font-bold text-sm">15名</div>
+          </div>
+          <div class="bg-[#f5f7fa] rounded-xl p-5 text-center">
+            <div class="w-10 h-10 flex items-center justify-center bg-[#00BFFF]/10 rounded-full mx-auto mb-3"><i class="ri-medal-line text-[#00BFFF] text-xl"></i></div>
+            <div class="text-[#1a2332]/50 text-xs mb-1">その他資格</div>
+            <div class="text-[#1a2332] font-bold text-sm">玉掛け・小型移動式クレーン・高所作業車など</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold text-[#1a2332] mb-6 flex items-center gap-2">
+          <div class="w-1 h-5 bg-[#00BFFF] rounded-full"></div>会社データ
+        </h3>
+        <div class="grid grid-cols-3 gap-4 mb-10">
+          <div class="bg-[#1a2332] rounded-xl p-6 text-center">
+            <div class="text-[#00BFFF] font-black text-4xl leading-none">30<span class="text-xl">名</span></div>
+            <div class="text-white/60 text-xs mt-2">従業員数</div>
+          </div>
+          <div class="bg-[#1a2332] rounded-xl p-6 text-center">
+            <div class="text-[#00BFFF] font-black text-4xl leading-none">20<span class="text-xl">名</span></div>
+            <div class="text-white/60 text-xs mt-2">協力会社作業員数</div>
+          </div>
+          <div class="bg-[#1a2332] rounded-xl p-6 text-center">
+            <div class="text-[#00BFFF] font-black text-4xl leading-none">38<span class="text-xl">名</span></div>
+            <div class="text-white/60 text-xs mt-2">保有資格者数</div>
+          </div>
+        </div>
+        <h3 class="text-lg font-bold text-[#1a2332] mb-6 flex items-center gap-2">
+          <div class="w-1 h-5 bg-[#00BFFF] rounded-full"></div>代表メッセージ
+        </h3>
+        <div class="bg-[#f5f7fa] rounded-xl p-8 relative">
+          <div class="w-8 h-8 flex items-center justify-center absolute top-6 right-6 opacity-20">
+            <i class="ri-double-quotes-r text-[#00BFFF] text-5xl"></i>
+          </div>
+          <p class="text-[#1a2332]/80 text-base leading-[2] mb-6">
+            現場ごとに条件は異なりますが、<br />常に安全と効率を両立した足場を提供しています。<br />どんな現場でも柔軟に対応いたしますので、<br />まずはお気軽にご相談ください。
+          </p>
+          <div class="flex items-center gap-3 pt-4 border-t border-[#e8ecf0]">
+            <div class="w-10 h-10 flex items-center justify-center bg-[#1a2332] rounded-full"><i class="ri-user-line text-white text-lg"></i></div>
+            <div>
+              <div class="text-[#1a2332] font-bold text-sm">西宮 寛治</div>
+              <div class="text-[#1a2332]/50 text-xs">代表取締役</div>
+            </div>
+          </div>
+        </div>
+        <h3 class="text-lg font-bold text-[#1a2332] mt-10 mb-4 flex items-center gap-2">
+          <div class="w-1 h-5 bg-[#00BFFF] rounded-full"></div>連絡先
+        </h3>
+        <div class="flex flex-col gap-3">
+          <a href="tel:0438-42-1710" class="flex items-center gap-3 text-[#1a2332] hover:text-[#00BFFF] transition-colors duration-200">
+            <div class="w-9 h-9 flex items-center justify-center bg-[#00BFFF]/10 rounded-lg"><i class="ri-phone-line text-[#00BFFF] text-lg"></i></div>
+            <span class="font-bold text-xl">0438-42-1710</span>
+          </a>
+          <div class="flex items-center gap-3 text-[#1a2332]/60">
+            <div class="w-9 h-9 flex items-center justify-center bg-[#1a2332]/5 rounded-lg"><i class="ri-printer-line text-[#1a2332]/40 text-lg"></i></div>
+            <span class="text-base">FAX：0438-42-1713</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RECRUIT ===== -->
+<section id="recruit" class="relative py-24 overflow-hidden">
+  <div class="absolute inset-0">
+    <img src="https://readdy.ai/api/search-image?query=skilled%20industrial%20scaffolding%20worker%20craftsman%20professional%20hard%20hat%20safety%20vest%20plant%20construction%20site%20dramatic%20lighting%20dark%20moody%20atmosphere%20wide%20angle%20shot%20high%20quality%20photography&width=1920&height=900&seq=recruit001&orientation=landscape" alt="採用情報背景" class="w-full h-full object-cover object-top" />
+    <div class="absolute inset-0 bg-gradient-to-r from-[#1a2332]/95 via-[#1a2332]/85 to-[#1a2332]/60"></div>
+  </div>
+  <div class="relative z-10 max-w-7xl mx-auto px-6">
+    <div class="mb-12">
+      <span class="text-[#00BFFF] text-xs font-bold tracking-[4px] uppercase">Recruit</span>
+      <h2 class="text-3xl md:text-5xl font-black text-white mt-3 mb-4 leading-tight">
+        稼げるだけじゃない。<br /><span class="text-[#00BFFF]">誇れる仕事</span>を。
+      </h2>
+      <p class="text-white/70 text-base leading-relaxed">現場で通用する職人を本気で育てます。</p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      <div>
+        <div class="grid grid-cols-2 gap-4 mb-10">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 flex items-center justify-center bg-[#00BFFF] rounded-lg flex-shrink-0"><i class="ri-user-add-line text-white text-base"></i></div>
+            <span class="text-white font-medium text-sm">未経験歓迎</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 flex items-center justify-center bg-[#00BFFF] rounded-lg flex-shrink-0"><i class="ri-graduation-cap-line text-white text-base"></i></div>
+            <span class="text-white font-medium text-sm">資格取得支援あり</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 flex items-center justify-center bg-[#00BFFF] rounded-lg flex-shrink-0"><i class="ri-calendar-check-line text-white text-base"></i></div>
+            <span class="text-white font-medium text-sm">安定した仕事量</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 flex items-center justify-center bg-[#00BFFF] rounded-lg flex-shrink-0"><i class="ri-money-cny-circle-line text-white text-base"></i></div>
+            <span class="text-white font-medium text-sm">高単価案件多数</span>
+          </div>
+        </div>
+        <div id="recruit-btn-area">
+          <button onclick="showRecruitForm()" class="flex items-center gap-3 bg-[#00BFFF] hover:bg-[#00a8e0] text-white font-bold px-8 py-4 rounded-full transition-all duration-200 hover:scale-105 whitespace-nowrap cursor-pointer border-none">
+            <span>応募はこちら</span>
+            <div class="w-8 h-8 flex items-center justify-center bg-white/20 rounded-full"><i class="ri-arrow-right-line text-white"></i></div>
+          </button>
+        </div>
+        <div id="recruit-form" class="hidden bg-white/10 backdrop-blur-sm rounded-2xl p-6 mt-4">
+          <h3 class="text-white font-bold text-lg mb-5">採用応募フォーム</h3>
+          <form onsubmit="submitRecruitForm(event)" class="flex flex-col gap-4">
+            <div>
+              <label class="text-white/70 text-xs mb-1 block">お名前 *</label>
+              <input type="text" name="name" required placeholder="山田 太郎" class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white text-sm placeholder-white/40 focus:outline-none focus:border-[#00BFFF]" />
+            </div>
+            <div>
+              <label class="text-white/70 text-xs mb-1 block">メールアドレス *</label>
+              <input type="email" name="email" required placeholder="example@email.com" class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white text-sm placeholder-white/40 focus:outline-none focus:border-[#00BFFF]" />
+            </div>
+            <div>
+              <label class="text-white/70 text-xs mb-1 block">電話番号</label>
+              <input type="tel" name="phone" placeholder="090-0000-0000" class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white text-sm placeholder-white/40 focus:outline-none focus:border-[#00BFFF]" />
+            </div>
+            <div>
+              <label class="text-white/70 text-xs mb-1 block">メッセージ</label>
+              <textarea name="message" rows="3" maxlength="500" placeholder="志望動機や経験などをご記入ください（500文字以内）" oninput="updateCount(this,'recruit-count')" class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white text-sm placeholder-white/40 focus:outline-none focus:border-[#00BFFF] resize-none"></textarea>
+              <div class="text-white/40 text-xs text-right mt-1"><span id="recruit-count">0</span>/500</div>
+            </div>
+            <div class="flex gap-3">
+              <button type="submit" id="recruit-submit-btn" class="flex-1 bg-[#00BFFF] hover:bg-[#00a8e0] text-white font-bold py-3 rounded-lg transition-colors duration-200 whitespace-nowrap">応募する</button>
+              <button type="button" onclick="hideRecruitForm()" class="px-5 border border-white/30 text-white/70 hover:text-white rounded-lg transition-colors duration-200 whitespace-nowrap">キャンセル</button>
+            </div>
+          </form>
+        </div>
+        <div id="recruit-success" class="hidden bg-white/10 backdrop-blur-sm rounded-2xl p-6 mt-4 max-w-lg text-center">
+          <div class="w-12 h-12 flex items-center justify-center bg-[#00BFFF] rounded-full mx-auto mb-4"><i class="ri-check-line text-white text-2xl"></i></div>
+          <p class="text-white font-bold text-lg">応募を受け付けました</p>
+          <p class="text-white/60 text-sm mt-2">担当者よりご連絡いたします。</p>
+        </div>
+      </div>
+      <!-- Job conditions tabs -->
+      <div class="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10" style="background:rgba(255,255,255,0.08)">
+        <div class="flex border-b border-white/10">
+          <button onclick="setTab(0)" id="tab-0" class="tab-active flex-1 flex flex-col items-center gap-1 py-4 px-2 text-xs font-bold transition-all duration-200 cursor-pointer whitespace-nowrap border-none">
+            <div class="w-7 h-7 flex items-center justify-center"><i class="ri-money-dollar-circle-line text-lg"></i></div>
+            <span>給与</span>
+          </button>
+          <button onclick="setTab(1)" id="tab-1" class="tab-inactive flex-1 flex flex-col items-center gap-1 py-4 px-2 text-xs font-bold transition-all duration-200 cursor-pointer whitespace-nowrap border-none bg-transparent">
+            <div class="w-7 h-7 flex items-center justify-center"><i class="ri-calendar-2-line text-lg"></i></div>
+            <span>休日・休暇</span>
+          </button>
+          <button onclick="setTab(2)" id="tab-2" class="tab-inactive flex-1 flex flex-col items-center gap-1 py-4 px-2 text-xs font-bold transition-all duration-200 cursor-pointer whitespace-nowrap border-none bg-transparent">
+            <div class="w-7 h-7 flex items-center justify-center"><i class="ri-shield-check-line text-lg"></i></div>
+            <span>福利厚生</span>
+          </button>
+        </div>
+        <div id="tab-content" class="p-6">
+          <!-- filled by JS -->
+        </div>
+        <div class="px-6 pb-5">
+          <p class="text-white/40 text-xs leading-relaxed border-t border-white/10 pt-4">※ 給与・条件は経験・資格・能力を考慮の上、個別に決定いたします。詳細はお気軽にお問い合わせください。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="bg-[#1a2332] py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-14">
+      <span class="text-[#00BFFF] text-xs font-bold tracking-[4px] uppercase">Contact</span>
+      <h2 class="text-3xl md:text-4xl font-black text-white mt-3 mb-4">お問い合わせ</h2>
+      <p class="text-white/50 text-sm">お急ぎの方はお電話ください。フォームからもお気軽にご相談いただけます。</p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-10">
+      <!-- Left column -->
+      <div class="lg:col-span-2 flex flex-col gap-6">
+        <div class="bg-[#263447] rounded-2xl p-8 flex flex-col gap-5">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 flex items-center justify-center bg-[#00BFFF] rounded-xl"><i class="ri-phone-fill text-white text-xl"></i></div>
+            <div><div class="text-white/50 text-xs">お電話でのお問い合わせ</div><div class="text-white font-bold text-sm">TEL</div></div>
+          </div>
+          <a href="tel:0438-42-1710" class="text-[#00BFFF] font-black text-4xl hover:text-[#66d9ff] transition-colors duration-200 block">0438-42-1710</a>
+          <div class="flex items-center gap-2 text-white/40 text-sm">
+            <div class="w-5 h-5 flex items-center justify-center"><i class="ri-printer-line text-[#00BFFF]"></i></div>FAX：0438-42-1713
+          </div>
+          <div class="border-t border-white/10 pt-4">
+            <div class="bg-[#1a2332] rounded-lg px-4 py-4">
+              <div class="flex items-center gap-2 text-white/60 text-sm mb-1"><div class="w-4 h-4 flex items-center justify-center"><i class="ri-time-line text-[#00BFFF]"></i></div>受付時間：8:00〜18:00</div>
+              <div class="text-white/40 text-xs pl-6">※緊急対応は時間外もご相談ください</div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-[#263447] rounded-2xl p-8">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 flex items-center justify-center bg-[#00BFFF]/15 rounded-xl"><i class="ri-map-pin-line text-[#00BFFF] text-xl"></i></div>
+            <div><div class="text-white/50 text-xs">所在地</div><div class="text-white font-bold text-sm">Access</div></div>
+          </div>
+          <p class="text-white/60 text-sm leading-relaxed mb-4">〒299-0016<br />千葉県木更津市高砂1-4-40</p>
+          <div class="w-full h-48 rounded-xl overflow-hidden">
+            <iframe title="株式会社西宮工業 所在地" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.0!2d139.9267!3d35.3747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6022a3b0e1b1b1b1%3A0x0!2z5Y2D6JGJ55yM5pyo5pu46KKL5biC6auY56eR77yR4oiS77yU4oiS77yU77yA!5e0!3m2!1sja!2sjp!4v1700000000000!5m2!1sja!2sjp&q=千葉県木更津市高砂1-4-40" width="100%" height="100%" style="border:0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- Right column: form -->
+      <div class="lg:col-span-3">
+        <div id="contact-form-wrap" class="bg-[#263447] rounded-2xl p-8">
+          <h3 class="text-white font-bold text-lg mb-6">お問い合わせフォーム</h3>
+          <form onsubmit="submitContactForm(event)">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label class="text-white/60 text-xs mb-1.5 block">お名前 *</label>
+                <input type="text" name="name" required placeholder="山田 太郎" class="w-full bg-[#1a2332] border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder-white/30 focus:outline-none focus:border-[#00BFFF] transition-colors" />
+              </div>
+              <div>
+                <label class="text-white/60 text-xs mb-1.5 block">会社名</label>
+                <input type="text" name="company" placeholder="株式会社〇〇" class="w-full bg-[#1a2332] border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder-white/30 focus:outline-none focus:border-[#00BFFF] transition-colors" />
+              </div>
+              <div>
+                <label class="text-white/60 text-xs mb-1.5 block">メールアドレス *</label>
+                <input type="email" name="email" required placeholder="example@email.com" class="w-full bg-[#1a2332] border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder-white/30 focus:outline-none focus:border-[#00BFFF] transition-colors" />
+              </div>
+              <div>
+                <label class="text-white/60 text-xs mb-1.5 block">電話番号</label>
+                <input type="tel" name="phone" placeholder="090-0000-0000" class="w-full bg-[#1a2332] border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder-white/30 focus:outline-none focus:border-[#00BFFF] transition-colors" />
+              </div>
+              <div class="sm:col-span-2">
+                <label class="text-white/60 text-xs mb-1.5 block">お問い合わせ種別</label>
+                <select name="type" class="w-full bg-[#1a2332] border border-white/10 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-[#00BFFF] transition-colors">
+                  <option value="">選択してください</option>
+                  <option value="見積もり依頼">見積もり依頼</option>
+                  <option value="定修工事">定修工事</option>
+                  <option value="緊急対応">緊急対応</option>
+                  <option value="保全・メンテナンス">保全・メンテナンス</option>
+                  <option value="その他">その他</option>
+                </select>
+              </div>
+              <div class="sm:col-span-2">
+                <label class="text-white/60 text-xs mb-1.5 block">お問い合わせ内容 * <span class="ml-2 text-white/30">（500文字以内）</span></label>
+                <textarea name="message" required rows="5" maxlength="500" placeholder="現場の状況や工事内容についてご記入ください" oninput="updateCount(this,'contact-count')" class="w-full bg-[#1a2332] border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder-white/30 focus:outline-none focus:border-[#00BFFF] transition-colors resize-none"></textarea>
+                <div class="text-white/30 text-xs text-right mt-1"><span id="contact-count">0</span>/500</div>
+              </div>
+            </div>
+            <button type="submit" id="contact-submit-btn" class="w-full mt-6 bg-[#00BFFF] hover:bg-[#00a8e0] text-white font-bold py-4 rounded-lg transition-colors duration-200 whitespace-nowrap">送信する</button>
+          </form>
+        </div>
+        <div id="contact-success" class="hidden bg-[#263447] rounded-2xl p-12 flex flex-col items-center justify-center text-center min-h-[400px]">
+          <div class="w-16 h-16 flex items-center justify-center bg-[#00BFFF] rounded-full mb-6"><i class="ri-check-line text-white text-3xl"></i></div>
+          <h3 class="text-white font-black text-2xl mb-3">送信完了</h3>
+          <p class="text-white/60 text-sm leading-relaxed">お問い合わせを受け付けました。<br />担当者より折り返しご連絡いたします。</p>
+        </div>
+      </div>
+    </div>
+    <div class="mt-16 pt-8 border-t border-white/10 text-center">
+      <p class="text-white/30 text-xs">&copy; <span id="year"></span> 株式会社西宮工業 All Rights Reserved.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  // ---- Utilities ----
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  function scrollTo(id) {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+    const menu = document.getElementById('mobile-menu');
+    if (!menu.classList.contains('hidden')) toggleMenu();
+  }
+
+  function updateCount(el, spanId) {
+    document.getElementById(spanId).textContent = el.value.length;
+  }
+
+  // ---- Navbar ----
+  window.addEventListener('scroll', () => {
+    const nav = document.getElementById('navbar');
+    if (window.scrollY > 50) nav.classList.add('nav-scrolled');
+    else nav.classList.remove('nav-scrolled');
+  });
+
+  function toggleMenu() {
+    const menu = document.getElementById('mobile-menu');
+    const icon = document.getElementById('menu-icon');
+    menu.classList.toggle('hidden');
+    icon.className = menu.classList.contains('hidden') ? 'ri-menu-line text-2xl' : 'ri-close-line text-2xl';
+  }
+
+  // ---- Recruit tabs ----
+  const tabData = [
+    {
+      rows: [
+        { label: '日給', value: '15,000円〜25,000円（経験・資格による）' },
+        { label: '月収目安', value: '30万円〜50万円以上' },
+        { label: '昇給', value: '年1回（実績・資格取得に応じて随時）' },
+        { label: '各種手当', value: '資格手当・現場手当・交通費全額支給' },
+      ]
+    },
+    {
+      rows: [
+        { label: '休日', value: '週休2日制（現場カレンダーによる）' },
+        { label: '年間休日', value: '105日以上' },
+        { label: '有給休暇', value: '入社6ヶ月後より付与（法定通り）' },
+        { label: 'その他休暇', value: '慶弔休暇・夏季休暇・年末年始休暇' },
+      ]
+    },
+    {
+      rows: [
+        { label: '社会保険', value: '健康保険・厚生年金・雇用保険・労災保険' },
+        { label: '資格取得支援', value: '受験費用全額会社負担・合格祝い金あり' },
+        { label: '制服・道具', value: '作業服・安全靴・工具類 会社支給' },
+        { label: 'その他', value: '社員旅行・懇親会・技術研修制度あり' },
+      ]
+    }
+  ];
+
+  let activeTab = 0;
+
+  function setTab(idx) {
+    activeTab = idx;
+    for (let i = 0; i < 3; i++) {
+      const btn = document.getElementById('tab-' + i);
+      btn.className = (i === idx ? 'tab-active' : 'tab-inactive') + ' flex-1 flex flex-col items-center gap-1 py-4 px-2 text-xs font-bold transition-all duration-200 cursor-pointer whitespace-nowrap border-none bg-transparent';
+    }
+    renderTabContent();
+  }
+
+  function renderTabContent() {
+    const rows = tabData[activeTab].rows;
+    const html = '<table class="w-full"><tbody>' + rows.map((r, i) =>
+      `<tr class="${i < rows.length - 1 ? 'border-b border-white/10' : ''}">
+        <td class="py-4 pr-4 align-top w-28"><span class="text-[#00BFFF] text-xs font-bold bg-[#00BFFF]/10 px-2 py-1 rounded whitespace-nowrap">${r.label}</span></td>
+        <td class="py-4 text-white/85 text-sm leading-relaxed">${r.value}</td>
+      </tr>`
+    ).join('') + '</tbody></table>';
+    document.getElementById('tab-content').innerHTML = html;
+  }
+
+  setTab(0);
+
+  // ---- Recruit form ----
+  function showRecruitForm() {
+    document.getElementById('recruit-btn-area').classList.add('hidden');
+    document.getElementById('recruit-form').classList.remove('hidden');
+  }
+
+  function hideRecruitForm() {
+    document.getElementById('recruit-btn-area').classList.remove('hidden');
+    document.getElementById('recruit-form').classList.add('hidden');
+  }
+
+  async function submitRecruitForm(e) {
+    e.preventDefault();
+    const btn = document.getElementById('recruit-submit-btn');
+    btn.disabled = true;
+    btn.textContent = '送信中...';
+    const form = e.target;
+    const params = new URLSearchParams(new FormData(form));
+    try {
+      await fetch('https://readdy.ai/api/form/d7mg5l82li4t868hjheg', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: params.toString(),
+      });
+    } catch(_) {}
+    document.getElementById('recruit-form').classList.add('hidden');
+    document.getElementById('recruit-btn-area').classList.add('hidden');
+    document.getElementById('recruit-success').classList.remove('hidden');
+  }
+
+  // ---- Contact form ----
+  async function submitContactForm(e) {
+    e.preventDefault();
+    const btn = document.getElementById('contact-submit-btn');
+    btn.disabled = true;
+    btn.textContent = '送信中...';
+    const form = e.target;
+    const params = new URLSearchParams(new FormData(form));
+    try {
+      await fetch('https://readdy.ai/api/form/d7mg5l82li4t868hjhe0', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: params.toString(),
+      });
+    } catch(_) {}
+    document.getElementById('contact-form-wrap').classList.add('hidden');
+    const success = document.getElementById('contact-success');
+    success.classList.remove('hidden');
+    success.classList.add('flex');
+  }
+</script>
+</body>
+</html>
