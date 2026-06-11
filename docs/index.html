@@ -678,8 +678,24 @@
     e.preventDefault();
     const btn = document.getElementById('contact-submit-btn');
     btn.disabled = true; btn.textContent = '送信中...';
+    const fd = new FormData(e.target);
+    const body = {
+      name:    fd.get('name')    || '',
+      company: fd.get('company') || '',
+      email:   fd.get('email')   || '',
+      phone:   fd.get('phone')   || '',
+      type:    fd.get('type')    || '',
+      message: fd.get('message') || '',
+      _subject: '【西宮工業】お問い合わせフォームより',
+      _template: 'table',
+      _captcha: 'false',
+    };
     try {
-      await fetch('https://readdy.ai/api/form/d7mg5l82li4t868hjhe0', { method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:new URLSearchParams(new FormData(e.target)).toString() });
+      await fetch('https://formsubmit.co/ajax/sudoler.6666@outlook.jp', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(body),
+      });
     } catch(_) {}
     document.getElementById('contact-form-wrap').classList.add('hidden');
     const success = document.getElementById('contact-success');
