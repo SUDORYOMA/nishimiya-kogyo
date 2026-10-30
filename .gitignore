@@ -4,3 +4,6 @@ dist/
 .env
 .env.local
 *.log
+
+# unplugin-auto-import が自動生成
+auto-imports.d.ts
